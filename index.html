@@ -6,15 +6,18 @@
     <title>Javascript Office Particee</title>
 </head>
 <body>
-    <p> This is a simple paragraph.</p>
-
-
-<h2>What Can JavaScript Do?</h2>
 
 <p id="demo">JavaScript can change HTML content.</p>
 
+<button style="color: rgb(240, 16, 16);" onclick="document.getElementById('myImage').src='Image/pic_bulbon.gif'" .style.fontSize="20px">
+  Turn on the light
+</button>
 
+<img id="myImage" src="Image/pic_bulboff.gif" style="width:100px">
 
-    <script src="script.js"></script>
+<button style="color: red;" onclick="document.getElementById('myImage').src='Image/pic_bulboff.gif'" style.fontSize="50px">
+  Turn off the light
+</button>
+<script src="script.js"></script>
 </body>
 </html>
