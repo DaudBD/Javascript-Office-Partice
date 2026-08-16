@@ -16,7 +16,7 @@
 
 //document.getElementById('myImage').src='pic_bulboff.gif'";
 /*
-! Javascripts Strings */
+! Javascripts Strings 
 let text = 'He is an Engineer "//from USA//, He is Boy!" ';
 console.log(text);
 console.log(text.length);
@@ -38,3 +38,27 @@ let vat = 10;
 
 let total =`Total: ${(price * (1+vat)).toFixed(1)}`;
 console.log(total);
+
+let a = 'Hello String';
+console.log(a.charAt(0));
+console.log(a.charCodeAt(0));
+console.log(a.codePointAt(0));
+
+const name = 'DauBD.COm';
+*/
+//let letter = name.at(-2);
+let letter = name.charAt(name.length-5);
+console.log(letter);
+"Using strict";
+
+
+let text ='Hello Man';
+
+text ='A'+ text.slice(1);
+//try {
+    text[2] = 'A';
+//} catch (error) {
+    //text ='err.message';
+//}
+console.log(text);
+
