@@ -308,7 +308,7 @@ const multiply = function (a,b) {
     return a * b ;
 
 }
-console.log(multiply(5,6));*/
+console.log(multiply(5,6));
 // Arrow Function shorter 
 const multiply = (a, b) => a * b;
 
@@ -338,3 +338,67 @@ console.log(hello2("World"));
 const hello = name => "Hello " + name;
 
 console.log(hello("Ariful"));
+
+
+setTimeout(myFunction, 3000);
+
+// The callback function
+function myFunction() {
+    console.log("Hello!");
+}
+setTimeout(myFunction,2000);
+
+console.log("Start");
+
+setTimeout(function() {
+    console.log("Timer");
+}, 0);
+
+console.log("End");
+
+let timer;
+
+function startTimer() {
+  timer = setTimeout(function() {
+    document.getElementById("demo").innerHTML = "Finished";
+  }, 5000);
+}
+
+function stopTimer() {
+  clearTimeout(timer);
+  document.getElementById("demo").innerHTML = "Timer stopped";
+}
+
+// Function to display any text
+function myDisplayer(text) {
+  let demo = document.getElementById("demo"); 
+  demo.innerHTML += text + "<br>";
+}
+
+setInterval(showMessage, 2000, "Hello", "Ariful");
+
+function showMessage(greeting, name) {
+  console.log(greeting + " " + name);
+}*/
+
+const images = [
+  "Image/img_nature.jpg",
+  "Image/img_snowtops.jpg",
+  "Image/img_mountains.jpg"
+];
+let index = 0;
+let timer;
+
+function showNextSlide() {
+    index =(index+1) % images.length;
+    document.getElementById("Slide").src = images[index];
+}
+function startSlides() {
+if (!timer) {
+  timer = setInterval(showNextSlide, 1000);
+}
+}
+function stopSlides() {
+  clearInterval(timer);
+  timer = undefined;
+}
