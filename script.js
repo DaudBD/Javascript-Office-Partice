@@ -184,7 +184,7 @@ console.log(Number.isSafeInteger(price));
 let x = 5 << 1;
 //let x = ~5;
 console.log(x);
-*/
+
 
 let bigNumber = 1234564567890n;
 
@@ -193,3 +193,122 @@ console.log(bigNumber);
 let x = 100n;
 
 console.log(typeof x);
+// Function For JavaScript
+function sayHello() {
+return 'Hell0 World';
+
+}
+let greeting = sayHello();
+console.log(greeting);
+
+function multiply(a, b) {
+    return a * b;
+}
+let result = multiply(4, 3);
+console.log(result);
+
+function add(x,y) {
+    return x + y;
+}
+let sum1 =add(4,7);
+let sum2 = add(5,6);
+let result2 = add(sum1,sum2);
+console.log(result2);
+
+let text ="Outside:" + typeof carName;
+function myFunction() {
+    let carName= 'Volvo';
+    let text = "Inside:" + typeof carName + " " + carName;
+    console.log(text);
+}
+myFunction();
+
+function toCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+  
+}
+let value = toCelsius(17);
+console.log(value);
+
+function sayHello(name){
+    return "Hello" + name;
+}
+let greeting2 = sayHello('Daud');
+
+console.log(greeting2);
+
+function fullName(firstName,lastName) {
+    return firstName + " " + lastName;
+}
+let name = fullName("Md Ariful", "Islam Daud");
+console.log(name);
+
+function multiply(a, b) {
+  return a * b;
+}
+
+let total = multiply(2, 3) * 10;
+console.log(total);
+
+function test() {
+    return "First";
+// stop function
+    return "Second";
+}
+
+let result3 = test();
+console.log(result3);
+
+function check(age) {
+    if (age >= 18) {
+        return "Adult";
+    }
+    return "Minor" ;
+}
+
+console.log(check(16));
+
+function findMax() {
+    let max = -Infinity;
+
+    for(let i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+
+    return max;
+}
+
+let result4 = findMax(10, 25, 7, 40, 15);
+
+console.log(result4);
+
+function sumAll(){
+    let sum = 0;
+    for (let i=0; i < arguments.length; i++){
+        sum = arguments[i] + sum ;
+    }
+return sum;
+}
+let result5 = sumAll(10,20,30,50);
+console.log(result5);
+
+function subStract(a,b) {
+    return a-b;
+}
+let x1 = subStract(10,20);
+let x2 = subStract(30,10);
+let total1 = subStract(x1,x2);
+console.log(x1);
+console.log(total1);
+*/
+
+const multiply = function (a,b) {
+    return a * b ;
+
+}
+console.log(multiply(5,6));
+// Arrow Function shorter 
+const multiply = (a, b) => a * b;
+return a,
