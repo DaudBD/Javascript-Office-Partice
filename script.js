@@ -302,13 +302,39 @@ let x2 = subStract(30,10);
 let total1 = subStract(x1,x2);
 console.log(x1);
 console.log(total1);
-*/
+
 
 const multiply = function (a,b) {
     return a * b ;
 
 }
-console.log(multiply(5,6));
+console.log(multiply(5,6));*/
 // Arrow Function shorter 
 const multiply = (a, b) => a * b;
-return a,
+
+let result = multiply(4,5);
+console.log(result);
+
+const add = (a,b) => a+b ;
+
+let result2 = add(5,7);
+console.log(result2);
+const hello = () => "Hello World!";
+console.log(hello);
+
+// Square
+const square1 = (x) => x * x;
+const square2 = x => x * x;
+
+console.log(square1(5));
+console.log(square2(6));
+
+// Hello
+const hello1 = (val) => "Hello " + val;
+const hello2 = val => "Hello " + val;
+
+console.log(hello1("Ariful"));
+console.log(hello2("World"));
+const hello = name => "Hello " + name;
+
+console.log(hello("Ariful"));
