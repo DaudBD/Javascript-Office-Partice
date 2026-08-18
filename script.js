@@ -379,7 +379,7 @@ setInterval(showMessage, 2000, "Hello", "Ariful");
 
 function showMessage(greeting, name) {
   console.log(greeting + " " + name);
-}*/
+}
 
 const images = [
   "Image/img_nature.jpg",
@@ -402,3 +402,90 @@ function stopSlides() {
   clearInterval(timer);
   timer = undefined;
 }
+
+
+const person = {};
+
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+console.log(person);
+const person2 = new Object({
+firstName: "Adiyan",
+age: 4,
+country: "Bangladesh",
+citizen: "Bangladeshi",
+});
+console.person2();
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  fullName: function(){
+    return this.firstName + " " + this.lastName;
+  }
+};
+person.age = 40;
+let n1 = "firstName";
+let n2 = "lastName";
+let name = person[n1] + " " + person[n2]; 
+console.log(name);
+console.log(person.fullName());
+
+const person = {
+    firstName: "Adiyan",
+    lastName: "Islam",
+    id: 5656,
+
+    getId: function() {
+        return this.id;
+    }
+};
+
+person.name = function() {
+    return (this.firstName + " " + this.lastName).toUpperCase();
+};
+
+let number = person.getId();
+
+console.log(number);
+console.log(person.name());
+
+const person1 = {
+    name: "Daud",
+    age: 10,
+
+    Hello: function () {
+        return "Hello " + this.name;
+    }
+};
+let text = person1;
+console.log(person1.Hello());
+console.log(person1);*/
+
+const person = {
+  name: "John",
+  age: 50,
+  city: "Dhaka",
+  address: {
+    city: "DhakaBD",
+    country: "Bangladesh"
+  }
+};
+
+delete person.city;
+
+console.log(person);
+console.log(person.address.city);
+console.log(person.address.country);
+
+const person1 = {
+  name: "John",
+  age: 50,
+  city: "Dhaka"
+};
+
+console.log(Object.keys(person1));
