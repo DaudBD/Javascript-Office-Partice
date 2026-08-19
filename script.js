@@ -464,7 +464,7 @@ const person1 = {
 };
 let text = person1;
 console.log(person1.Hello());
-console.log(person1);*/
+console.log(person1);
 
 const person = {
   name: "John",
@@ -489,3 +489,54 @@ const person1 = {
 };
 
 console.log(Object.keys(person1));
+
+// Array Javascript 
+
+const cars = ["Hanif","Shamoli","Volvo"];
+const cars1 = new Array("Saab", "Volvo", "BMW");
+const person = ["John", "Doe", 46];
+
+console.log (cars1.length-1);
+console.log(cars1[cars1.length - 1]);
+let car = cars.toString();
+let car1 = JSON.stringify(cars1);
+console.log(cars);
+console.log(cars1);
+console.log(cars1[0]);
+console.log(car);
+console.log(car1);
+console.log(cars1.length);
+console.log (cars1.length-1);
+console.log(person[0]);
+
+const cars = ["Hanif","Shamoli","Volvo"];
+let carl= cars.length;
+
+let step = "<ol>";
+for (i=0; i < carl ; i++){
+    step += "<li>" + cars[i] + "</li>"
+}
+step += "</ol>";
+
+console.log(step);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+fruits.shift();
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+}
+console.log(text);
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+console.log(myChildren);*/
+
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple") + 1;
+console.log(fruits);
