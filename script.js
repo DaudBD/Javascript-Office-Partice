@@ -535,8 +535,153 @@ console.log(text);
 const myGirls = ["Cecilie", "Lone"];
 const myBoys = ["Emil", "Tobias", "Linus"];
 const myChildren = myGirls.concat(myBoys);
-console.log(myChildren);*/
+console.log(myChildren);
 
 const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.indexOf("Apple") + 1;
 console.log(fruits);
+console.log(fruits.sort);
+
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.findIndex(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+console.log(first);
+
+const month = ['Jan','Feb','Mar','July'];
+const sort = month.toSorted();
+const reversed = months.toReversed();
+console.log
+console.log(sort);
+console.log(reversed);
+*/
+// Create a Set
+//const letters = new Set(["a","b","c"]);
+
+// List all Elements
+// let text = "";
+// for (const x of letters) {
+// text += x;
+// }
+
+//console.log(text);
+
+//const values = [...letters.values()];
+//console.log(values);
+//const letters = new Set(["a","b","c"]);
+//for(const value of letters.values()) {
+    //console.log(value);
+//}
+
+//let text = "";
+
+//letters.forEach(function(value) {
+   // text += value + '<br>';
+//}
+//);
+//console.log(text);
+
+//console.log(typeof letters);
+//console.log(letters instanceof Set);
+//console.log(letters.has("a"));
+//console.log(letters.has("d"));
+// Create a Set
+//const letters = new Set(["a","b","c"]);
+
+// Get all Entries
+//const myIterator = letters.entries();
+
+// List all Entries
+//let text = "";
+//for (const entry of myIterator) {
+  //text += entry + "<br>";
+//}
+//console.log(text);
+
+//const A = new Set(["a","b","c"]);
+//const B = new Set (["d","b","c"]);
+//const C = A.union(B);
+
+//const C = A.intersection(B);
+
+//const C = A.symmetricDifference(B);
+
+//const C = A.isSubsetOf(B);
+//console.log(C);
+
+//for (const x of C) {
+ // text += x;
+//}
+
+ //console.log(C);
+
+  //const A = new Set(["a", "b", "c"]);
+
+ //const B = new Set(["d", "b", "c"]);
+
+ //const C = A.isSubsetOf(B);
+
+ //console.log(C);
+ //const A = new Set(["b", "c"]);
+ //const B = new Set(["d", "b", "c"]);
+
+ //console.log(A.isSubsetOf(B));
+
+//const A = new Set(["a", "b", "c"]);
+
+//const B = new Set(["d", "b", "c"]);
+
+//const C = A.isDisjointFrom(B);
+
+//console.log(C);
+
+//let mySet = new WeakSet();
+//let myObj ={fname:"Rahim",lname:"karim"};
+
+//mySet.add(myObj);
+//mySet.delete(myObj);
+//myObj =null;
+//let answer = mySet.has(myObj);
+//console.log(answer);
+
+let text = "";
+
+const persons = new WeakSet();
+
+const John = {
+    name: "Rahim",
+    age: 30
+};
+
+const Parul = {
+    name: "Parul",
+    age: 40
+};
+
+const Arif = {
+    name: "Arif",
+    age: 32
+};
+
+const Adiyan = {
+    name: "Adiyan",
+    age: 4
+};
+
+track(Parul);
+track(Arif);
+track(Parul);
+
+function track(visitor) {
+    if (persons.has(visitor)) {
+        text += visitor.name + " is visiting again.<br>";
+    } else {
+        persons.add(visitor);
+        text += visitor.name + ", age " + visitor.age +
+                ", is visiting for the first time.<br>";
+    }
+}
+
+console.log(text);
