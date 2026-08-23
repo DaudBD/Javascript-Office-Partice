@@ -646,31 +646,31 @@ console.log(reversed);
 //let answer = mySet.has(myObj);
 //console.log(answer);
 
-let text = "";
+//let text = "";
 
-const persons = new WeakSet();
+//const persons = new WeakSet();
 
-const John = {
-    name: "Rahim",
-    age: 30
-};
+//const John = {
+    //name: "Rahim",
+    //age: 30
+//};
 
-const Parul = {
-    name: "Parul",
-    age: 40
-};
+//const Parul = {
+   // name: "Parul",
+   // age: 40
+//};
 
-const Arif = {
-    name: "Arif",
-    age: 32
-};
+//const Arif = {
+   // name: "Arif",
+   // age: 32
+//};
 
-const Adiyan = {
-    name: "Adiyan",
-    age: 4
-};
+//const Adiyan = {
+   // name: "Adiyan",
+    //age: 4
+//};
 
-track(Parul);
+/* track(Parul);
 track(Arif);
 track(Parul);
 
@@ -684,4 +684,34 @@ function track(visitor) {
     }
 }
 
+console.log(text); */
+
+const fruits = new Map();
+fruits.set ("apples",500);
+fruits.set ("Banans",504);
+fruits.set ("Oranage",600);
+fruits.set ("apples",120);
+fruits.set("mangos",100);
+fruits.delete("apples");
+let numb = fruits.get("apples");
+
+//fruits.clear();
+console.log(numb);
+console.log(fruits);
+console.log(typeof fruits);
+console.log(fruits instanceof Map);
+console.log(fruits.size);
+console.log(fruits.has("apples"));
+
+let text = "";
+
+fruits.forEach(function(value, key)  {
+    text += key + ' = ' + value + '\n';
+});
 console.log(text);
+
+let text2 = "";
+for (const x of fruits.entries()) {
+    text2 += " = " + x ;
+}
+console.log(text2);
