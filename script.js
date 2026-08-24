@@ -684,7 +684,7 @@ function track(visitor) {
     }
 }
 
-console.log(text); */
+console.log(text); 
 
 const fruits = new Map();
 fruits.set ("apples",500);
@@ -714,4 +714,50 @@ let text2 = "";
 for (const x of fruits.entries()) {
     text2 += " = " + x ;
 }
-console.log(text2);
+console.log(text2);*/
+
+// Math Js Larning start .......
+
+ const x2 = Math.SQRT2
+ const x = Math.PI 
+ const radius = 5;
+ const area = x * radius * radius;
+ console.log(area);
+ console.log(Math.PI);
+ console.log(x2);
+ console.log(Math.E);
+ console.log(Math.SQRT1_2);
+  console.log(Math.LOG10E);
+console.log(Math.LN10);
+console.log(Math.round(6.5));
+console.log(Math.ceil(5.6));
+console.log(Math.floor(8.7));
+console.log(Math.trunc(9.8));
+console.log(Math.trunc(-9.8));
+console.log(Math.floor(-9.8));
+console.log(Math.sign(-30));
+console.log(Math.sign(5));
+console.log(Math.pow(3,3));
+console.log(Math.abs(-5,4));
+
+console.log(Math.sin(30 * Math.PI / 180));
+
+let y =Math.min(10,20,30,40);
+console.log(y);
+
+let y1 =Math.max(10,20,30,40);
+console.log(y1);
+
+
+let y2 =Math.random(10,20,30,40);
+console.log(y2);
+console.log(Math.log(10));
+console.log(Math.log2(2));
+console.log(Math.log10(1000));
+console.log(Math.floor(Math.random() * 10));
+
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+console.log(getRndInteger(100, 200));
